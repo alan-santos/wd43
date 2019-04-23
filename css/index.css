@@ -43,3 +43,36 @@ header nav ul li {
 header nav ul li a {
     color: #036;
 }
+
+form {
+    background-color: #dcdcdc;
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px 5px 0 0;
+}
+
+input [type="search"] {
+    border-radius: 5px;
+    border: 1px solid #ececec;
+    padding-left: 15px;
+}
+
+section {
+    margin-top: 10px;
+}
+
+.menu-departamentos {
+    background-color: #dcdcdc;
+    width: 250px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.menu-departamentos h3 {
+    padding: 0 0 8px 0;
+}
+
+.menu-departamentos li{
+ background-color: white;
+ border-bottom: 2px solid #dcdcdc;
+}
