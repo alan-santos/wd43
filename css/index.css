@@ -3,10 +3,13 @@ body {
     font-family: "Lucida Sans", "Lucida Grande", sans-serif;
 }
 
-.container{
+.container {
     margin: 0 auto;
     width: 940px;
+    position: relative;
 }
+
+/* sacola */
 
 header span {
     background-image: url(../img/sacola.png);
@@ -18,10 +21,18 @@ header span {
     padding-right: 35px;
     display: inline-block;
     padding-top: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
+
+/* menu opcoes */
 
 header nav ul {
     font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 header nav ul li {
