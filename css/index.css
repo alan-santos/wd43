@@ -55,7 +55,8 @@ header nav ul li a {
 /* busca */
 
 form {
-    background-color: #dcdcdc;
+    /* background-color: #dcdcdc; */
+    background: linear-gradient(black, #dcdcdc);
     width: 230px;
     padding: 5px;
     border-radius: 5px 5px 0 0;
@@ -112,19 +113,19 @@ section {
     color: #333;
 }
 
-.menu-departamentos li ul{
+.menu-departamentos li ul {
     display: none;
 }
 
-.menu-departamentos li:hover ul{
+.menu-departamentos li:hover ul {
     display: block;
 }
 
-.menu-departamentos li ul li{
+.menu-departamentos li ul li {
     background-color: #dcdcdc;
 }
 
-.menu-departamentos li li a::before{
+.menu-departamentos li li a::before {
     content: '\275A';
     padding-right: 5px;
 }
@@ -133,6 +134,8 @@ section {
     margin: 10px 0;
     padding: 10px;
     width: 445px;
+    border-radius: 4px;
+    box-shadow: inset 2px 2px 4px #999;
 }
 
 .painel h2 {
@@ -140,6 +143,7 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 2px rgba(250, 250, 250, 0.8);
 }
 
 .painel a {
@@ -161,11 +165,12 @@ section {
 }
 
 .novidades {
-    background-color: #f5dcdc;
+    background: radial-gradient(red, yellow);
 }
 
 .mais-vendidos {
     background-color: #dcdcf5;
+    background: radial-gradient(yellow, red);
 }
 
 footer {
