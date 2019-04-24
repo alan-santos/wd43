@@ -44,6 +44,14 @@ header nav ul li a {
     color: #036;
 }
 
+.menu-opcoes a:hover {
+    color: red;
+}
+
+.menu-opcoes a:active {
+    color: green;
+}
+
 /* busca */
 
 form {
@@ -102,6 +110,23 @@ section {
 .menu-departamentos li a {
     text-decoration: none;
     color: #333;
+}
+
+.menu-departamentos li ul{
+    display: none;
+}
+
+.menu-departamentos li:hover ul{
+    display: block;
+}
+
+.menu-departamentos li ul li{
+    background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a::before{
+    content: '\275A';
+    padding-right: 5px;
 }
 
 .painel {
