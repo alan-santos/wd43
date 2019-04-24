@@ -15,9 +15,9 @@ header span {
     background-image: url(../img/sacola.png);
     background-repeat: no-repeat;
     background-position: top right;
-    font-size: 14px;
+    font-size: 0.9em;
     text-align: right;
-    width: 140px;
+    width: 200px;
     padding-right: 35px;
     display: inline-block;
     padding-top: 8px;
@@ -44,35 +44,50 @@ header nav ul li a {
     color: #036;
 }
 
+/* busca */
+
 form {
     background-color: #dcdcdc;
-    width: 250px;
-    padding: 8px;
+    width: 230px;
+    padding: 5px;
     border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
 }
 
-input [type="search"] {
-    border-radius: 5px;
+input[type="search"] {
+    border-radius: 10px;
     border: 1px solid #ececec;
     padding-left: 15px;
+    width: 13em;
 }
 
 section {
     margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-departamentos {
     background-color: #dcdcdc;
-    width: 250px;
-    padding: 8px;
+    width: 230px;
+    padding: 8px 0;
     margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .menu-departamentos h3 {
-    padding: 0 0 8px 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
 }
 
-.menu-departamentos li{
- background-color: white;
- border-bottom: 2px solid #dcdcdc;
+.menu-departamentos li {
+    background-color: white;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 5px;
+}
+
+.menu-departamentos li a {
+    text-decoration: none;
+    color: #333;
 }
