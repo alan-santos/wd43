@@ -52,6 +52,18 @@ form {
     padding: 5px;
     border-radius: 5px 5px 0 0;
     box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    border: none;
 }
 
 input[type="search"] {
@@ -129,4 +141,39 @@ section {
 
 .mais-vendidos {
     background-color: #dcdcf5;
+}
+
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    padding: 10px 0;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    background-repeat: no-repeat;
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+}
+
+a[href*="twitter"] {
+    background-image: url(../img/twitter.png);
+}
+
+a[href*="gplus"] {
+    background-image: url(../img/googleplus.png);
+}
+
+a[href*="facebook"] {
+    background-image: url(../img/facebook.png);
 }
