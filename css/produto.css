@@ -42,7 +42,7 @@ header h1 img {
 
 .produto {
     color: #333;
-    line-height: 1.6em;
+    line-height: 1.7em;
     margin-top: 2em;
 }
 
@@ -69,14 +69,15 @@ header h1 img {
 }
 
 .cores legend {
-    position: absolute;
+    position: static;
     top: 0;
     left: 0;
 }
 
 .cores label img {
     display: block;
-    max-width: 100%;
+    max-width: 35%;
+    max-height: 100%;
 }
 
 .cores label::after {
@@ -89,21 +90,6 @@ header h1 img {
     position: absolute;
     top: 30px;
     cursor: pointer;
-}
-
-.cores label[for=verde]::after {
-    background-color: #3c6;
-    left: 0;
-}
-
-.cores label[for=rosa]::after {
-    background-color: #f66;
-    left: 60px;
-}
-
-.cores label[for=azul]::after {
-    background-color: #66f;
-    left: 120px;
 }
 
 .cores input:checked+label::after {
@@ -123,7 +109,31 @@ header h1 img {
     border: 6px solid rgba(0, 0, 0, 0.1);
 }
 
+.cores label[for=verde]::after {
+    background-color: #3c6;
+    left: 0;
+}
 
+.cores label[for=rosa]::after {
+    background-color: #f66;
+    left: 60px;
+}
+
+.cores label[for=azul]::after {
+    background-color: #66f;
+    left: 120px;
+}
+
+.tamanhos output {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    text-align: center;
+    border: 3px solid #666;
+    border-radius: 50%;
+    color: #555;
+}
 
 .comprar {
     background-color: #91bd3c;
@@ -171,4 +181,39 @@ a[href*="gplus"] {
 
 a[href*="facebook"] {
     background-image: url(../img/facebook.png);
+}
+
+@media(min-width:630px) {
+    .produto {
+        position: relative;
+        padding-left: 40%;
+        font-size: 1.2em;
+    }
+    .cores {
+        position: static;
+        padding: 0;
+    }
+    .cores label img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .cores label::after {
+        position: static;
+        float: left;
+        margin-right: 10px;
+    }
+    .produto fieldset {
+        display: inline-block;
+        vertical-align: top;
+        margin: 1em 0;
+        min-width: 240px;
+        width: 45%;
+    }
+}
+
+@media(min-width:1000px) {
+    .container {
+        width: 940px;
+    }
 }
