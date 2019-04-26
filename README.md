@@ -23,9 +23,11 @@ codemyui
 Visual Studio Code
 macro
 
+***********
 ol>li*6>a[href="#"]>figure>img[src="img/produtos/miniatura$.png" alt="miniatura$"]+figcaption 
 
 ctrl + space
+***********
 
 display 
     inline: nao-redimemsionavel, nao utilizar
@@ -33,9 +35,7 @@ display
     inline-block: redimensionavel sem margin
 
 
-displayflex
-
-
+display flex
 css-tricks.com flexbox
 
 
@@ -43,7 +43,11 @@ css-tricks.com flexbox
 pesos dos seletores
 
 tag:1
+
 class: 10
+
 id: 100
+
 inline: 1000
+
 !important:9999
